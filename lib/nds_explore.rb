@@ -1,4 +1,4 @@
- require 'pp'
+ 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 # Call the method directors_database to retrieve the NDS
@@ -10,6 +10,6 @@ end
 
 def print_first_directors_movie_titles
     directors_database.each {|word| print word,'\n'}
-    pp word
+    binding.pry
       
 end
